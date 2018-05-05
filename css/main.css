@@ -1,0 +1,139 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #2d3c49;
+}
+
+img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #2d3c49;
+    font-size: 0.8em;
+    padding: 5px 10px 15px 10px;
+    text-align: center;
+    display: block;
+}
+
+
+hr {
+    display: block;
+    border: 0;
+    border-top: 3px solid #1c1cbb;
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+p,
+h1,
+h2,
+h3 {
+    text-align: center;
+    margin: .25em 0;
+}
+
+/* =================================
+  Layout Containers
+==================================== */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /** sets height of viewport to 100% **/
+}
+
+.portfolio-main {
+    flex: 1; /** allows div to grow to keep sticky footer **/
+}
+
+.main-header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.item-description {
+    width: 100%;
+    margin: auto;
+}
+
+.main-footer {
+    background: #1c1cbb;
+    margin-top: 30px;
+    text-align: center;
+    padding: 1em;
+}
+
+/* =================================
+  Page Elements
+==================================== */
+
+.logo {
+    width: 80px;
+    display: block;
+    margin: auto;
+}
+
+#featured-headline {
+    color: #1c1cbb;
+    padding: 20px 10px 10px 10px;
+}
+
+footer h3 {
+    color: #fff;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+    .main-header {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* =================================
+  Flex Media Queries
+==================================== */
+
+@media (min-width: 550px) {
+    .featured-work {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .featured-item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px) {
+    .main-header {
+            display: flex;
+        align-items: flex-start;
+    }
+
+    .name-title {
+        flex-grow: 3;
+    }
+
+    .name-title h1,
+    .name-title h3 {
+        text-align: end;
+    }
+}
+
+@media (min-width: 900px) {
+    .featured-item {
+        width: 33%;
+    }
+}

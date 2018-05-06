@@ -40,6 +40,7 @@ h3 {
     margin: .25em 0;
 }
 
+
 /* =================================
   Layout Containers
 ==================================== */
@@ -57,6 +58,10 @@ body {
 .main-header {
     padding-top: .5em;
     padding-bottom: .5em;
+}
+
+.featured-item {
+    margin-top: 15px;
 }
 
 .item-description {
@@ -86,6 +91,10 @@ body {
     padding: 20px 10px 10px 10px;
 }
 
+.tag-line {
+    font-size: 0.75em;
+    font-style: italic;
+}
 footer h3 {
     color: #fff;
 }
